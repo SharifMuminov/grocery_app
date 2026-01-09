@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFFF9F9F9)),
       home: const OnBoardingPage(),
+      // home: const TextCarousel(),
     );
   }
 }
