@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/pages/detail_product/detail_product_page.dart';
 import 'package:grocery_app/pages/home/widget/featured_products_item.dart';
 
 class FeaturedProductsView extends StatefulWidget {
@@ -87,7 +88,19 @@ class _FeaturedProductsViewState extends State<FeaturedProductsView> {
       padding: EdgeInsets.only(left: 17, right: 17, bottom: 110),
       sliver: SliverGrid(
         delegate: SliverChildBuilderDelegate((context, index) {
-          return FeaturedProductsItem(data: _featuredProductsMockData[index]);
+          return FeaturedProductsItem(
+            data: _featuredProductsMockData[index],
+            onTab: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return DetailProductPage();
+                  },
+                ),
+              );
+            },
+          );
         }, childCount: _featuredProductsMockData.length),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,

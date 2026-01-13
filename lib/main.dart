@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/pages/detail_product/detail_product_page.dart';
 import 'package:grocery_app/pages/home/home_page.dart';
 import 'package:grocery_app/pages/on_boarding/on_boarding_page.dart';
 
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFFF9F9F9)),
-      // home: const OnBoardingPage(),
-      home: const HomePage(),
+      home: const OnBoardingPage(),
+      // home: const DetailProductPage(),
     );
   }
 }
