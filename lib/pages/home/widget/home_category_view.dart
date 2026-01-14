@@ -107,6 +107,8 @@ class _HomeCategoryViewState extends State<HomeCategoryView> {
                           ),
                           child: SvgPicture.asset(
                             _categoryMockData[index]["icon"]!,
+                            width: 24,
+                            height: 24,
                           ),
                         ),
                         Text(
