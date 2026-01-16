@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:grocery_app/pages/about_me/widget/about_me_text_field.dart';
 import 'package:grocery_app/pages/widget/gradient_button.dart';
+import 'package:grocery_app/pages/widget/main_text_field.dart';
 
 class AboutMePage extends StatefulWidget {
   const AboutMePage({super.key});
@@ -76,17 +76,17 @@ class _AboutMePageState extends State<AboutMePage> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    AboutMeTextField(
+                    MainTextField(
                       controller: _controllerName,
                       hintText: 'Name',
                       icon: CupertinoIcons.profile_circled,
                     ),
-                    AboutMeTextField(
+                    MainTextField(
                       controller: _controllerEmail,
                       hintText: 'Email',
                       icon: CupertinoIcons.mail,
                     ),
-                    AboutMeTextField(
+                    MainTextField(
                       controller: _controllerPhone,
                       hintText: 'Phone',
                       icon: CupertinoIcons.phone,
@@ -102,11 +102,11 @@ class _AboutMePageState extends State<AboutMePage> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    AboutMeTextField(
+                    MainTextField(
                       hintText: 'Current password',
                       icon: CupertinoIcons.lock,
                     ),
-                    AboutMeTextField(
+                    MainTextField(
                       obscureText: _obscureTextPassword,
                       hintText: 'Password',
                       icon: CupertinoIcons.lock,
@@ -116,7 +116,7 @@ class _AboutMePageState extends State<AboutMePage> {
                         });
                       },
                     ),
-                    AboutMeTextField(
+                    MainTextField(
                       hintText: 'Confirm password',
                       icon: CupertinoIcons.lock,
                     ),

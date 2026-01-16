@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AboutMeTextField extends StatefulWidget {
-  const AboutMeTextField({
+class MainTextField extends StatefulWidget {
+  const MainTextField({
     super.key,
     this.controller,
     required this.hintText,
@@ -21,10 +21,10 @@ class AboutMeTextField extends StatefulWidget {
   final VoidCallback? onTabSuffixIcon;
 
   @override
-  State<AboutMeTextField> createState() => _AboutMeTextFieldState();
+  State<MainTextField> createState() => _MainTextFieldState();
 }
 
-class _AboutMeTextFieldState extends State<AboutMeTextField> {
+class _MainTextFieldState extends State<MainTextField> {
   final FocusNode _focusNode = FocusNode();
 
   @override
