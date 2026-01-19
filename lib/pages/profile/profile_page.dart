@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/pages/about_me/about_me_page.dart';
+import 'package:grocery_app/pages/favorite/favorite_page.dart';
 import 'package:grocery_app/pages/my_address/my_address_page.dart';
+import 'package:grocery_app/pages/my_order/my_order_page.dart';
+import 'package:grocery_app/pages/notifications/notifications_page.dart';
 import 'package:grocery_app/pages/profile/widget/profile_item.dart';
 import 'package:grocery_app/pages/profile/widget/user_data_view.dart';
+import 'package:grocery_app/pages/transactions/transactions_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -38,12 +42,30 @@ class _ProfilePageState extends State<ProfilePage> {
             ProfileItem(
               title: "My Orders",
               iconsPath: "assets/icons/my_order.svg",
-              onTab: () {},
+              onTab: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return MyOrderPage();
+                    },
+                  ),
+                );
+              },
             ),
             ProfileItem(
               title: "My Favorites",
               iconsPath: "assets/icons/favorite.svg",
-              onTab: () {},
+              onTab: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return FavoritePage();
+                    },
+                  ),
+                );
+              },
               iconWidth: 17,
               iconHeight: 16,
             ),
@@ -71,12 +93,30 @@ class _ProfilePageState extends State<ProfilePage> {
             ProfileItem(
               title: "Transactions",
               iconsPath: "assets/icons/transactions.svg",
-              onTab: () {},
+              onTab: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return TransactionsPage();
+                    },
+                  ),
+                );
+              },
             ),
             ProfileItem(
               title: "Notifications",
               iconsPath: "assets/icons/notifications.svg",
-              onTab: () {},
+              onTab: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return NotificationsPage();
+                    },
+                  ),
+                );
+              },
             ),
             ProfileItem(
               title: "Sign out",
