@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/pages/categories/categories_page.dart';
-import 'package:grocery_app/pages/detail_product/detail_product_page.dart';
-import 'package:grocery_app/pages/filter/filter_page.dart';
-import 'package:grocery_app/pages/home/home_page.dart';
-import 'package:grocery_app/pages/navigation_bar/main_navigation_bar_page.dart';
 import 'package:grocery_app/pages/on_boarding/on_boarding_page.dart';
-import 'package:grocery_app/pages/profile/profile_page.dart';
-import 'package:grocery_app/pages/search/search_page.dart';
+
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
